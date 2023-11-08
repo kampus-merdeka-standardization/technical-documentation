@@ -1,21 +1,68 @@
-# [Title](/01_title.md)
+# Title
 
-## [Badge](/02_badge.md)
+Bagian ini tulislah satu kalimat saja yang menggambarkan keseluruhan project untuk membantu orang memahami apa tujuan dan sasaran utama project tersebut.
 
-## [Description](/03_description.md)
+## Badge
 
-## [Change Log](/04_change_log.md)
+Tambahkan badge di bawah title. Badge yang harus ditambahkan diantaranya adalah:
+1. Build Status: Menunjukkan status dari sistem otomatisasi build
+2. Code Coverage: Menunjukkan cakupan coverage unit test
+3. Version: Menunjukkan versi terbaru dari project
+4. Pull Requests: Menunjukkan banyaknya pull request yang terbuka
 
-## [High Level Design](/05_high_level_design.md)
+![Build Status](https://img.shields.io/badge/Build-Success-brightgreen) ![Code Coverage](https://img.shields.io/badge/Coverage-80%-brightgreen) ![Version](https://img.shields.io/badge/Version-v1.0.0-blue) ![Pull Requests](https://img.shields.io/badge/PR-1-informational)
 
-## [Low Level Design](/06_low_level_design.md)
+## Description
 
-## [Diagram](/07_diagram.md)
+## Change Log
 
-## [Swagger Link](/08_swagger_link.md)
+### [Versi Terbaru] - Tanggal Rilis Terbaru
 
-## [How To Build](/09_how_to_build.md)
+### Tambah
+- Fitur baru yang ditambahkan.
+- Fitur baru kedua yang ditambahkan.
 
-## [How To Run](/10_how_to_run.md)
+### Perbaikan
+- Perbaikan bug yang memengaruhi penggunaan proyek.
 
-## [How To Test](/11_how_to_test.md)
+### Menghapus
+- Fitur A telah dihapus dan tidak lagi tersedia pada versi berikutnya.
+
+### Pembaruan
+- Pembaruan dokumen atau penjelasan yang ada.
+
+## High Level Design
+
+## Low Level Design
+
+## Diagram
+
+## Swagger Link
+
+Masukkan swagger link disini
+
+## How To Build 
+
+Tambahkan build di dalam Makefile untuk build project.
+
+```Makefile
+    build:
+```
+
+## How To Run
+
+Tambahkan run di dalam Makefile untuk menjalankan project.
+
+```Makefile
+    run:
+```
+
+## How To Test
+
+Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project.
+
+```Makefile
+    test:
+    
+    test-coverage:
+```
