@@ -33,9 +33,64 @@ Tambahkan badge di bawah title. Badge yang harus ditambahkan diantaranya adalah:
 
 ## High Level Design
 
+![hld example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210128214233/Netflix-High-Level-System-Architecture.png)
+
 ## Low Level Design
 
+### Architectural Diagrams
+
+![lld example](https://walkingtree.tech/wp-content/uploads/2022/04/image3.jpg)
+
+### API details
+
+![lld example 2](https://walkingtree.tech/wp-content/uploads/2022/04/image1-3.png)
+
+### Database design
+![lld example 3](https://walkingtree.tech/wp-content/uploads/2022/04/image4-2.png)
+
+### Technical specifications
+
+![lld example 4](https://walkingtree.tech/wp-content/uploads/2022/04/image2-3.png)
+
 ## Diagram
+
+### Usecase
+
+### Sequence
+
+```mermaid
+sequenceDiagram
+    participant A as Alice
+    participant J as John
+    A->>J: Hello John, how are you?
+    J->>A: Great!
+```
+
+### ERD
+
+```mermaid
+erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber PK
+        string make
+        string model
+        string[] parts
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string driversLicense PK "The license #"
+        string(99) firstName "Only 99 characters are allowed"
+        string lastName
+        string phone UK
+        int age
+    }
+    NAMED-DRIVER {
+        string carRegistrationNumber PK, FK
+        string driverLicence PK, FK
+    }
+    MANUFACTURER only one to zero or more CAR : makes
+```
 
 ## Swagger Link
 
