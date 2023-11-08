@@ -59,6 +59,25 @@ Ini adalah bagian penting dari suatu proyek, dan banyak pengembang dan non-penge
 ## Diagram
 
 ### Usecase
+```plantuml
+@startuml
+left to right direction
+actor Pustakawan as librarian
+actor Anggota as member
+
+rectangle "Sistem Perpustakaan" {
+  usecase (UC1) as "Pinjam Buku" 
+  usecase (UC2) as "Kembalikan Buku"
+  usecase (UC3) as "Perpanjang Peminjaman"
+  usecase (UC4) as "Cek Status Buku"
+  
+  librarian --> UC1
+  librarian --> UC2
+  member --> UC3
+  member --> UC4
+}
+@enduml
+```
 
 ### Sequence
 
