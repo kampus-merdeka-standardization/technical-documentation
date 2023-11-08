@@ -98,26 +98,26 @@ Masukkan swagger link disini
 
 ## How To Build 
 
-Tambahkan build di dalam Makefile untuk build project.
-
-```Makefile
-    build:
+Tambahkan build di dalam Makefile untuk build project. seperti:
+```bash
+make build
 ```
 
 ## How To Run
 
-Tambahkan run di dalam Makefile untuk menjalankan project.
+Tambahkan run di dalam Makefile untuk menjalankan project. seperti:
 
-```Makefile
-    run:
+```bash
+make run
 ```
 
 ## How To Test
 
-Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project.
+Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project. seperti:
 
-```Makefile
-    test:
-    
-    test-coverage:
+```bash
+make test
+```
+```bash
+make test-coverage
 ```
