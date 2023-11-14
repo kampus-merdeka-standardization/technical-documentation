@@ -43,7 +43,7 @@ Masukkan swagger link disini
 
 ## How To Build 
 
-Tambahkan build di dalam Makefile untuk build project.
+Proses build adalah konversi kode sumber menjadi program eksekusi atau perangkat lunak yang dapat dijalankan. Hasil dari proses build adalah eksekutabel atau pustaka yang siap untuk digunakan. Tambahkan build di dalam Makefile untuk build project.
 
 ```Makefile
     build:
@@ -51,7 +51,7 @@ Tambahkan build di dalam Makefile untuk build project.
 
 ## How To Run
 
-Tambahkan run di dalam Makefile untuk menjalankan project.
+Proses run adalah eksekusi program atau skrip yang telah dibangun. Ketika sebuah program dijalankan, sistem operasi mengalokasikan sumber daya seperti memori dan CPU, dan instruksi yang terkandung dalam program tersebut dieksekusi secara berurutan. Tambahkan run di dalam Makefile untuk menjalankan project.
 
 ```Makefile
     run:
