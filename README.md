@@ -14,6 +14,10 @@ Tambahkan badge di bawah title. Badge yang harus ditambahkan diantaranya adalah:
 
 ## Description
 
+Deskripsi adalah bagian yang memberikan gambaran umum tentang proyek yang sedang dikembangkan. Tujuannya adalah untuk menjelaskan apa tujuan proyek, apa masalah yang dipecahkan oleh proyek, dan mengapa proyek ini penting atau berguna.
+
+Ini adalah bagian penting dari suatu proyek, dan banyak pengembang dan non-pengembang akan melihatnya. Sangat penting untuk memiliki informasi yang paling akurat dan benar. Deskripsi perlu ditulis dengan baik tanpa kesalahan tata bahasa dan dapat dibaca oleh pengguna dari berbagai latar belakang. Deskripsi tidak perlu panjang tetapi perlu merangkum keseluruhan proyek. Misalnya, apa yang dilakukan pada aplikasi ini? Teknologi apa saja yang gunakan? dan lain lain.
+
 ## Change Log
 
 ### [Versi Terbaru] - Tanggal Rilis Terbaru
@@ -33,9 +37,83 @@ Tambahkan badge di bawah title. Badge yang harus ditambahkan diantaranya adalah:
 
 ## High Level Design
 
+![hld example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210128214233/Netflix-High-Level-System-Architecture.png)
+
 ## Low Level Design
 
+### Architectural Diagrams
+
+![lld example](https://walkingtree.tech/wp-content/uploads/2022/04/image3.jpg)
+
+### API details
+
+![lld example 2](https://walkingtree.tech/wp-content/uploads/2022/04/image1-3.png)
+
+### Database design
+![lld example 3](https://walkingtree.tech/wp-content/uploads/2022/04/image4-2.png)
+
+### Technical specifications
+
+![lld example 4](https://walkingtree.tech/wp-content/uploads/2022/04/image2-3.png)
+
 ## Diagram
+
+### Usecase
+```plantuml
+@startuml
+left to right direction
+actor Pustakawan as librarian
+actor Anggota as member
+
+rectangle "Sistem Perpustakaan" {
+  usecase (UC1) as "Pinjam Buku" 
+  usecase (UC2) as "Kembalikan Buku"
+  usecase (UC3) as "Perpanjang Peminjaman"
+  usecase (UC4) as "Cek Status Buku"
+  
+  librarian --> UC1
+  librarian --> UC2
+  member --> UC3
+  member --> UC4
+}
+@enduml
+```
+
+### Sequence
+
+```mermaid
+sequenceDiagram
+    participant A as Alice
+    participant J as John
+    A->>J: Hello John, how are you?
+    J->>A: Great!
+```
+
+### ERD
+
+```mermaid
+erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber PK
+        string make
+        string model
+        string[] parts
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string driversLicense PK "The license #"
+        string(99) firstName "Only 99 characters are allowed"
+        string lastName
+        string phone UK
+        int age
+    }
+    NAMED-DRIVER {
+        string carRegistrationNumber PK, FK
+        string driverLicence PK, FK
+    }
+    MANUFACTURER only one to zero or more CAR : makes
+```
 
 ## Swagger Link
 
@@ -53,16 +131,17 @@ Proses build adalah konversi kode sumber menjadi program eksekusi atau perangkat
 
 Proses run adalah eksekusi program atau skrip yang telah dibangun. Ketika sebuah program dijalankan, sistem operasi mengalokasikan sumber daya seperti memori dan CPU, dan instruksi yang terkandung dalam program tersebut dieksekusi secara berurutan. Tambahkan run di dalam Makefile untuk menjalankan project.
 
-```Makefile
-    run:
+```bash
+make run
 ```
 
 ## How To Test
 
-Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project.
+Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project. seperti:
 
-```Makefile
-    test:
-    
-    test-coverage:
+```bash
+make test
+```
+```bash
+make test-coverage
 ```
