@@ -45,20 +45,12 @@ Ini adalah bagian penting dari suatu proyek, dan banyak pengembang dan non-penge
 
 ![lld example](https://walkingtree.tech/wp-content/uploads/2022/04/image3.jpg)
 
-### API details
-
-![lld example 2](https://walkingtree.tech/wp-content/uploads/2022/04/image1-3.png)
-
-### Database design
-![lld example 3](https://walkingtree.tech/wp-content/uploads/2022/04/image4-2.png)
-
 ### Technical specifications
-
-![lld example 4](https://walkingtree.tech/wp-content/uploads/2022/04/image2-3.png)
 
 ## Diagram
 
 ### Usecase
+
 ```plantuml
 @startuml
 left to right direction
@@ -89,6 +81,10 @@ sequenceDiagram
     J->>A: Great!
 ```
 
+atau 
+
+![lld example 4](https://walkingtree.tech/wp-content/uploads/2022/04/image2-3.png)
+
 ### ERD
 
 ```mermaid
@@ -114,6 +110,10 @@ erDiagram
     }
     MANUFACTURER only one to zero or more CAR : makes
 ```
+
+atau
+
+![lld example 3](https://walkingtree.tech/wp-content/uploads/2022/04/image4-2.png)
 
 ## Swagger Link
 
