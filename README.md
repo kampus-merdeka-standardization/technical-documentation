@@ -141,11 +141,14 @@ make run
 
 ## How To Test
 
-Tambahkan test dan test-coverage di dalam Makefile untuk menjalankan unit test project. seperti:
+Proses test adalah kegiatan untuk memastikan bahwa program atau perangkat lunak berperilaku sesuai dengan yang diinginkan dan tidak menghasilkan kesalahan atau bug yang tidak diinginkan. Test dapat mencakup pengujian unit, integrasi, sistem, dan performa, tergantung pada kebutuhan proyek. Tambahkan target test di dalam Makefile untuk menjalankan rangkaian pengujian.
 
 ```bash
 make test
 ```
+
+Tambahkan juga test-coverage, yaitu pengukuran sejauh mana kode tercakup oleh pengujian. Ini membantu mengidentifikasi sejauh mana kode yang telah diuji dan menunjukkan area yang mungkin perlu pengujian lebih lanjut.
+
 ```bash
 make test-coverage
 ```
